@@ -1,16 +1,15 @@
 var platform;
 
-function init() {
-    document.addEventListener("deviceready",onDeviceReady);
-}
+window.addEventListener('load', function () {
+    document.addEventListener('deviceready', function () {
+        alert("PhoneGap is now loaded!");
+    }, false);
+}, false);
 
-onDeviceReady(e) {
-    platform = device.platform;
-    navigator.notification.alert(platform);
-}
 
 $(document).bind("mobileinit", function(){
     alert('test');
+    /*
     switch(platform) {
         case "Android":
             $.mobile.defaultPageTransition = "pop";
@@ -20,6 +19,7 @@ $(document).bind("mobileinit", function(){
             $.mobile.defaultPageTransition = "slide";
             break;
     }
+    */
 });
 
 
