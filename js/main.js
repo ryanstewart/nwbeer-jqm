@@ -1,7 +1,6 @@
-var platform;
-
-alert('does this get called');
-document.addEventListener("deviceready", onDeviceReady, false);
+$(function() {
+  document.addEventListener("deviceready", onDeviceReady, false);
+});
 
 function onDeviceReady() {
     alert('cordova is ready');
@@ -9,18 +8,12 @@ function onDeviceReady() {
 
 
 $(document).bind("mobileinit", function(){
-    alert('test');
-    /*
-    switch(platform) {
-        case "Android":
-            $.mobile.defaultPageTransition = "pop";
-            break;
-        case "iOS":
-            $.mobile.page.prototype.options.addBackBtn= true;
-            $.mobile.defaultPageTransition = "slide";
-            break;
-    }
-    */
+    if((navigator.userAgent.match(/iPhone/i)) ||(navigator.userAgent.match(/iPod/i))) {
+        $.mobile.page.prototype.options.addBackBtn= true;
+        $.mobile.defaultPageTransition = "slide";        
+    } else if (navigator.userAgent.match(/Android/i)){
+        $.mobile.defaultPageTransition = "pop";      
+    }   
 });
 
 
