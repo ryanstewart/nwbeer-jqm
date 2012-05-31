@@ -1,8 +1,7 @@
-function onLoad() {
-    alert("onload");
-    document.addEventListener("deviceready", onDeviceReady, false); 
- }
-
+$(function() {
+    alert('onload');
+    document.addEventListener("deviceready", onDeviceReady, true);
+});
 
 function onDeviceReady() {
     alert('please fire');
