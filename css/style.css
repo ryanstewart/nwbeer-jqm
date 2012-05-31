@@ -1,0 +1,129 @@
+body * {
+    font-family: 'Arvo', Helvetica !important;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.ui-body-a,
+.ui-overlay-a {
+    background: url('../img/background.png');
+    background-size: 100%;
+}
+
+
+.nwpeaks-header {
+    background-image: url('../img/header.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+.grid-button {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+div[class|=ui-grid] { 
+    text-align: center;
+}
+
+div[class|=ui-block] { 
+    vertical-align: middle;
+    display: inline-block;
+    padding-bottom: 50px;
+}
+
+.ui-btn-icon-top .ui-btn-inner .ui-icon, .ui-btn-icon-bottom .ui-btn-inner .ui-icon {
+    position: absolute;
+    margin: 0px auto;
+}
+
+.ui-btn-icon-top .ui-btn-inner {
+    padding-top: 100px;   
+}
+
+
+/* Icons
+-----------------------------------------------------------------------------------------------------------*/
+
+.ui-icon-beer-list {
+    background-image: url("../img/beer-icon.png");
+    -webkit-border-radius:              0px;
+    border-radius:                      0px;
+    width: 44px;
+    height: 54px;
+    position: absolute;
+    left: 50px;
+    box-shadow: none;
+}
+
+.ui-icon-beer-finder {
+    background-image: url("../img/beer-finder-icon.png");
+    -webkit-border-radius:              0px;
+    border-radius:                      0px;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 50px;
+    box-shadow: none;
+}
+
+.ui-icon-blog {
+    background-image: url("../img/blog-icon.png");
+    -webkit-border-radius:              0px;
+    border-radius:                      0px;
+    width: 56px;
+    height: 46px;
+    position: absolute;
+    left: 50px;
+    box-shadow: none;
+}
+
+.ui-icon-mountain-photos {
+    background-image: url("../img/photos-icon.png");
+    -webkit-border-radius:              0px;
+    border-radius:                      0px;
+    width: 44px;
+    height: 48px;
+    position: absolute;
+    left: 50px;
+    box-shadow: none;
+}
+
+.ui-icon-contact-us {
+    background-image: url("../img/contact-us-icon.png");
+    -webkit-border-radius:              0px;
+    border-radius:                      0px;
+    width: 48px;
+    height: 44px;
+    position: absolute;
+    left: 50px;
+    box-shadow: none;
+}
+
+.ui-icon-mountainbeers {
+    background-image: url("../img/mountainbeers-icon.png");
+    -webkit-border-radius:              0px;
+    border-radius:                      0px;
+    width: 75px;
+    height: 54px;
+    position: absolute;
+    left: 35px;
+    box-shadow: none;
+}
+
+@font-face {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Arvo'), url('http://themes.googleusercontent.com/static/fonts/arvo/v5/BM-nqL-L5PgjKPDNaleWB_esZW2xOQ-xsNqO47m55DA.woff') format('woff');
+}
+@font-face {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Arvo Bold'), local('Arvo-Bold'), url('http://themes.googleusercontent.com/static/fonts/arvo/v5/_OKjjqM9ed2qvTR07QdjWwLUuEpTyoUstqEm5AMlJo4.woff') format('woff');
+}
