@@ -18,10 +18,23 @@ $(document).bind("mobileinit", function(){
     } else if (navigator.userAgent.match(/Android/i)){
         // make Android transition the pop effect
         $.mobile.defaultPageTransition = "pop";      
-    }   
+    }
 });
 
+$(document).bind('pageinit', function() {
+    $("#photos").bind("tap", function(e) {
+        navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50, 
+                                                               destinationType: destinationType.DATA_URL });
+    });
+});
 
+function onPhotoDataSuccess(imageData) {
+    console.log('photo success');
+}
+
+function onFail(message) {
+    alert('Failed because: ' + message);
+}
 
 
 
