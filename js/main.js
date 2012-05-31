@@ -1,8 +1,11 @@
-window.addEventListener('load', function () {
-    document.addEventListener('deviceready', function () {
-        alert("PhoneGap is now loaded!");
-    }, false);
-}, false);
+function onLoad() {
+    document.addEventListener("deviceready", onDeviceReady, false); 
+ }
+
+
+function onDeviceReady() {
+    alert('please fire');
+}
 
 
 $(document).bind("mobileinit", function(){
