@@ -1,10 +1,14 @@
+var pictureSource;   
+var destinationType;
+
 $(function() {
-    alert('onload');
     document.addEventListener("deviceready", onDeviceReady, true);
 });
 
 function onDeviceReady() {
-    alert('please fire');
+    alert('Cordova is ready!');
+    pictureSource=navigator.camera.PictureSourceType;
+    destinationType=navigator.camera.DestinationType;    
 }
 
 
@@ -26,6 +30,7 @@ $(document).bind("mobileinit", function(){
 
 $(document).bind('pageinit', function() {
     $("#photos").bind("tap", function(e) {
+        alert('tap');
         navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50, 
                                                                destinationType: destinationType.DATA_URL });
     });
