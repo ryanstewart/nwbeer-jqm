@@ -1,10 +1,11 @@
 var platform;
 
-window.addEventListener('load', function () {
-    document.addEventListener('deviceready', function () {
-        alert("PhoneGap is now loaded!");
-    }, false);
-}, false);
+alert('does this get called');
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+    alert('cordova is ready');
+}
 
 
 $(document).bind("mobileinit", function(){
