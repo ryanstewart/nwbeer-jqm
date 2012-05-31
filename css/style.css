@@ -1,5 +1,5 @@
 body * {
-    font-family: 'Arvo', Helvetica !important;
+    font-family: Georgia, Garamond !important;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -27,19 +27,8 @@ body * {
     margin: auto;
 }
 
-div[class|=ui-grid] { 
-    text-align: center;
-}
-
 div[class|=ui-block] { 
-    vertical-align: middle;
-    display: inline-block;
     padding-bottom: 50px;
-}
-
-.ui-btn-icon-top .ui-btn-inner .ui-icon, .ui-btn-icon-bottom .ui-btn-inner .ui-icon {
-    position: absolute;
-    margin: 0px auto;
 }
 
 .ui-btn-icon-top .ui-btn-inner {
@@ -119,17 +108,4 @@ div[class|=ui-block] {
     position: absolute;
     left: 3px;
     box-shadow: none;
-}
-
-@font-face {
-  font-family: 'Arvo';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Arvo'), url('http://themes.googleusercontent.com/static/fonts/arvo/v5/BM-nqL-L5PgjKPDNaleWB_esZW2xOQ-xsNqO47m55DA.woff') format('woff');
-}
-@font-face {
-  font-family: 'Arvo';
-  font-style: normal;
-  font-weight: bold;
-  src: local('Arvo Bold'), local('Arvo-Bold'), url('http://themes.googleusercontent.com/static/fonts/arvo/v5/_OKjjqM9ed2qvTR07QdjWwLUuEpTyoUstqEm5AMlJo4.woff') format('woff');
 }
