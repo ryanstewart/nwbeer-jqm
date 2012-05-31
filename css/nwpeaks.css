@@ -93,7 +93,7 @@
 	color: #ffffff /*{a-bup-color}*/;
 	text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #000000 /*{a-bup-shadow-color}*/;
     background: -webkit-linear-gradient(-45deg, rgba(130,130,130,1) 0%,rgba(130,130,130,0.5) 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(30,130,130,1)), color-stop(100%,rgba(130,130,130,0.5)));
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(130,130,130,1)), color-stop(100%,rgba(130,130,130,0.5)));
 }
 .ui-btn-up-a a.ui-link-inherit {
 	color: #ffffff /*{a-bup-color}*/;

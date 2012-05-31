@@ -16,13 +16,13 @@ body * {
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
-    height: 150px;
+    height: 100px;
     margin-bottom: 5px;
 }
 
 .grid-button {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin: auto;
 }
 
