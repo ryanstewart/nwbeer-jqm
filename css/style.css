@@ -2,6 +2,7 @@ body * {
     font-family: 'Arvo', Helvetica !important;
     font-style: normal;
     font-weight: normal;
+    font-size: 12px;
 }
 
 .ui-body-a,
@@ -42,7 +43,12 @@ div[class|=ui-block] {
 }
 
 .ui-btn-icon-top .ui-btn-inner {
-    padding-top: 100px;   
+    padding-top: 70px;   
+}
+
+.ui-icon,
+.ui-icon-searchfield:after {
+	background: rgba(69,69,69,0);
 }
 
 
@@ -56,7 +62,7 @@ div[class|=ui-block] {
     width: 44px;
     height: 54px;
     position: absolute;
-    left: 50px;
+    left: 30px;
     box-shadow: none;
 }
 
@@ -67,7 +73,7 @@ div[class|=ui-block] {
     width: 48px;
     height: 48px;
     position: absolute;
-    left: 50px;
+    left: 30px;
     box-shadow: none;
 }
 
@@ -78,7 +84,7 @@ div[class|=ui-block] {
     width: 56px;
     height: 46px;
     position: absolute;
-    left: 50px;
+    left: 22px;
     box-shadow: none;
 }
 
@@ -89,7 +95,7 @@ div[class|=ui-block] {
     width: 44px;
     height: 48px;
     position: absolute;
-    left: 50px;
+    left: 30px;
     box-shadow: none;
 }
 
@@ -100,7 +106,7 @@ div[class|=ui-block] {
     width: 48px;
     height: 44px;
     position: absolute;
-    left: 50px;
+    left: 30px;
     box-shadow: none;
 }
 
@@ -111,7 +117,7 @@ div[class|=ui-block] {
     width: 75px;
     height: 54px;
     position: absolute;
-    left: 35px;
+    left: 15px;
     box-shadow: none;
 }
 
