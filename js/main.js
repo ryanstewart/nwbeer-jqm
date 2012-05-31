@@ -1,8 +1,10 @@
 $(document).bind("mobileinit", function(){
     $.mobile.defaultPageTransition = "slide";
     $.mobile.page.prototype.options.addBackBtn= true;
-    /*    
-    switch(platform) {
+    $(document).bind("deviceready", function (){
+        var platform = device.platform;
+        navigator.alert(platform);
+        switch(platform) {
             case "Android":
                 $.mobile.defaultPageTransition = "pop";
                 break;
@@ -11,16 +13,11 @@ $(document).bind("mobileinit", function(){
                 $.mobile.defaultPageTransition = "slide";
                 break;
         }
-    */
+    });
 
 });
 
 
-$(document).bind("deviceready", function (){
-    platform = device.platform;
 
-
-
-});
 
 
